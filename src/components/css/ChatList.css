@@ -123,7 +123,7 @@
 
 
 
-.timestamp-container {
+.timestamp-container .user-name{
     text-align: center;
     /* Other styling as needed */
 }

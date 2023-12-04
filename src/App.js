@@ -72,7 +72,7 @@ function App() {
 
     return (
         <div className="app">
-            <h3>Barry</h3>
+            <h4 className='user-name'>陈欣儒</h4>
             <ChatList messages={messages} onDeleteMessage={deleteMessage} />
             <MessageInput 
                 onSendMessage={sendMessageToServer} 
