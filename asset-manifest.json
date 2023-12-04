@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wechatWithYou/static/css/main.adc6a96f.css",
+    "main.js": "/wechatWithYou/static/js/main.b4d9b280.js",
+    "static/js/787.11ace374.chunk.js": "/wechatWithYou/static/js/787.11ace374.chunk.js",
+    "index.html": "/wechatWithYou/index.html",
+    "main.adc6a96f.css.map": "/wechatWithYou/static/css/main.adc6a96f.css.map",
+    "main.b4d9b280.js.map": "/wechatWithYou/static/js/main.b4d9b280.js.map",
+    "787.11ace374.chunk.js.map": "/wechatWithYou/static/js/787.11ace374.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adc6a96f.css",
+    "static/js/main.b4d9b280.js"
+  ]
+}
