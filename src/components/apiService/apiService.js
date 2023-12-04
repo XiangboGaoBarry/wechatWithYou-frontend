@@ -1,4 +1,4 @@
-const route = 'http://localhost:5001';
+// const route = 'http://localhost:5001';
 
 async function uploadImageToServer(file, updateMessages) {
   const formData = new FormData();

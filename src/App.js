@@ -5,7 +5,7 @@ import MessageInput from './components/MessageInput';
 import { uploadImageToServer, uploadAudioToServer, uploadVideoToServer} from './components/apiService/apiService';
 import './App.css';
 
-const route = 'http://localhost:5001';
+// const route = 'http://localhost:5001';
 
 function App() {
     const [messages, setMessages] = useState([]);
