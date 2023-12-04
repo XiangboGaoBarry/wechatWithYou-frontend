@@ -1,0 +1,123 @@
+/* src/components/MessageInput.css */
+
+.message-input-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.message-form {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.text-input {
+    flex-grow: 1;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.file-input {
+    display: none; /* Hide the file input and use a label if needed */
+}
+
+
+/* Add styles for your extra icons here */
+
+.extra-icons-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 60px; /* 根据你的消息输入栏高度调整 */
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 0;
+
+    transform: translateY(100%); /* 默认情况下将面板隐藏在视图外 */
+    transition: transform 0.3s ease-in-out; /* 设置过渡效果，ease-in-out 让动画更平滑 */
+    position: fixed;
+    bottom: 0; /* 如果你希望图标面板从底部滑入，确保它的位置在底部 */
+    left: 0;
+    right: 0;
+    z-index: 1; /* 确保面板在其他内容之上 */
+
+    padding: 10px; /* 添加更多的填充 */
+    gap: 15px; /* 创建更多的间隙 */
+    grid-template-columns: repeat(4, 1fr); /* 保持四列布局 */
+}
+
+.icon {
+    width: 50px; /* 根据你的设计调整 */
+    height: 50px; /* 根据你的设计调整 */
+    background-color: #ffffff; /* 临时背景色，应替换为实际图标 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 10px; /* 可选的圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 可选的阴影效果 */
+    text-align: center; /* 确保文字居中 */
+    /* 根据需要添加更多样式，比如背景图标等 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* 添加填充使得图标看起来更大 */
+    /* 确保图标的背景图片适合容器 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px; /* 为每个图标添加底部间隔 */
+}
+
+/* 使用这个类来控制当额外图标面板展示时的状态 */
+.show-extra-icons .extra-icons-panel {
+    transform: translateY(0%); /* 展示图标时，将面板滑入视图 */
+}
+
+/* 确保 .message-input-bar 根据额外图标面板的显示调整位置 */
+.message-input-bar {
+    transition: bottom 0.3s ease-in-out; /* 平滑过渡效果 */
+    position: fixed;
+}
+
+/* 当展示额外图标时，消息输入栏向上移动 */
+.message-input-bar.show-extra-icons {
+    bottom: 180px; /* 根据额外图标面板的高度调整，这个值应该等于面板的高度 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-upload-label {
+    display: inline-block; /* 使标签像块元素一样显示 */
+    cursor: pointer; /* 当鼠标悬停时显示指针 */
+    padding: 10px; /* 或根据你的设计进行调整 */
+    background-color: #f0f0f0; /* 背景色 */
+    border-radius: 5px; /* 圆角边框 */
+    border: 1px solid #ddd; /* 边框 */
+    margin: 5px; /* 保持一定间距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 可选的阴影效果 */
+    /* 根据需要添加更多样式，比如字体颜色、大小等 */
+}
